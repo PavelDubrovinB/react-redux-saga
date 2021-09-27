@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import { SubredditType } from '../../../store/interface';
 import { ButtonsState } from '../../../store/buttons/reduser';
+import './style.css';
 
 interface ButtonsProps {
   onClick: (id: SubredditType) => void;
