@@ -1,0 +1,4 @@
+.button_paused {
+  color:red !important;
+  animation-play-state: paused;
+}

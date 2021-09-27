@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App__buttons {
+  margin: 20px 0 20px 0;
+  height: 200px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.App__buttons button {
+  animation-name: moveX;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.App__themes {
+  display: flex;
+  min-width: 800px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.App__buttonLoading {
+  animation-name: none !important;
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(-100px);
+    animation-timing-function: cubic-bezier(0.333333, 0.305815, 0.666667, 0.806922);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}

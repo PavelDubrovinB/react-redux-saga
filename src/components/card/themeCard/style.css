@@ -1,0 +1,13 @@
+.themeCard__item button {
+  margin: 0 10px;
+  border: none;
+}
+
+.themeCard__item button:hover,
+.themeCard__item button:focus {
+  background: none;
+}
+
+.themesCard__item_button_like svg {
+  color: red !important;
+}
